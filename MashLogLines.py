@@ -4,6 +4,8 @@ infile='C:/Users/ethirolle/PycharmProjects/logsort/001.log'
 
 ## create regex to find log linss that start with datetimestamp
 import re
+## pattern finds date-time stamp at start of line, like
+## 2017-11-08 20:38:38
 pattern = re.compile("^(\d){4}-(\d){2}-(\d){2} (\d){2}:(\d){2}:(\d){2}")
 
 ## open input & output files
