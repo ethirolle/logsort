@@ -1,9 +1,9 @@
 # logsort
 Sort large log files / handles multi-line log entries
 
-When putting bucy services into debug mode, we can create log files that are:
-1) enormous
-2) not well-sorted
+When putting busy services into debug mode, we can create log files that are:
+a) enormous
+b) out of date-time order
 
 I.e., the loggers may run asynchronously, and dump large clumps of log lines, resulting in a log file where lines are not in datetime order.
 
